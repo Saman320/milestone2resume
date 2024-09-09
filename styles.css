@@ -1,0 +1,106 @@
+/* Global Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #ebedf1;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Resume Container */
+.resume {
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    width: 100%;
+    transition: transform 0.3s ease-in-out;
+}
+
+.resume:hover {
+    transform: scale(1.02);
+}
+
+/* Headings */
+h2 {
+    font-size: 22px;
+    color: #444444;
+    border-bottom: 2px solid #e0e0e0;
+    padding-bottom: 8px;
+    margin-bottom: 20px;
+    background-color: silver;
+    text-shadow: 2px 2px 8px #1cbdc9;}
+
+/* Section Styles */
+section {
+    margin-bottom: 30px;
+}
+
+p, ul {
+    margin: 0 0 15px 0;
+    line-height: 1.8;
+    font-size: 16px;
+}
+
+ul li {
+    margin-left: 20px;
+    position: relative;
+}
+
+ul li::before {
+    content: '•';
+    color: #007bff;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+/* Profile Picture */
+img {
+    max-width: 120px;
+    border-radius: 50%;
+    display: block;
+    margin-top: 15px;
+}
+
+/* Buttons */
+button {
+    padding: 12px 18px;
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 123, 255, 0.3);
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .resume {
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    p, ul {
+        font-size: 14px;
+    }
+
+    button {
+        padding: 10px 15px;
+    }
+}
